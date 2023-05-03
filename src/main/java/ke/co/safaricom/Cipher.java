@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Cipher {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a message to encode: ");
+        System.out.print("Enter message to encoded: ");
         String message = scanner.nextLine();
-        System.out.print("Enter the key (an integer from 1 to 25): ");
+        System.out.print("Enter the key (a number between 1 to 25): ");
         int key = scanner.nextInt();
         String encodedMessage = encode(message, key);
         System.out.println("Encoded message: " + encodedMessage);
