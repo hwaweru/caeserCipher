@@ -20,6 +20,7 @@ The encryption step performed by a Caesar cipher is often incorporated as part o
 -Run the file on Terminal
 -Enter text to be encrypted as per your need
 -Enter the encryption key
+
 -Encrypted and Decrypted data displayed
 -Request closes
 -Run file on Terminal again to initiate 
