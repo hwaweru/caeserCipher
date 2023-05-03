@@ -2,9 +2,9 @@
 
 Command Line Caesar Cipher
 
-#### This project is a Command Line Caesar Cipher, Version Date: 3rd May 2023
+## This project is a Command Line Caesar Cipher, Version Date: 3rd May 2023
 
-#### By **Hellen Waweru**
+## By **Hellen Waweru**
 
 ## Project Description
 In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
@@ -38,7 +38,7 @@ There are no known bugs on this project.
 
 If you need any assistance on any issues or have questions, ideas or concerns. Kindly contact me through email: shiks@gmail.com to make a contribution or for any assistance on the project.
 
-## Github URL Link
+## GITHUB URL Link
 
 To view project click :  https://github.com/hwaweru/caeserCipher.git
 
@@ -46,4 +46,4 @@ To view project click :  https://github.com/hwaweru/caeserCipher.git
 
 _The License used is GPL_
 
-Copyright (c) 2022 **Hellen Waweru**
+Copyright (c) 2023 **Hellen Waweru**
