@@ -34,6 +34,7 @@ There are no known bugs on this project.
 
 -JAVA
 -IntelliJ IDEA
+-Gradle
 
 ## Support and contact details
 
