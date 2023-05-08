@@ -4,35 +4,66 @@ import java.util.Scanner;
 
 public class Cipher {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter message to encoded: ");
-        String message = scanner.nextLine();
-        System.out.print("Enter the key (a number between 1 to 25): ");
-        int key = scanner.nextInt();
-        String encodedMessage = encode(message, key);
-        System.out.println("Encoded message: " + encodedMessage);
-        String decodedMessage = decode(encodedMessage, key);
-        System.out.println("Decoded message: " + decodedMessage);
-        scanner.close();
-    }
 
-    public static String encode(String message, int key) {
-        String encodedMessage = "";
-        for (int i = 0; i < message.length(); i++) {
-            char c = message.charAt(i);
-            if (Character.isLetter(c)) {
-                if (Character.isUpperCase(c)) {
-                    c = (char)(((int)c + key - 65) % 26 + 65);
-                } else {
-                    c = (char)(((int)c + key - 97) % 26 + 97);
-                }
+        System.out.println("Welcome to Caesar Cipher program!\n");
+
+        Scanner sc=new Scanner(System.in);
+        int shift,i,n;
+        String str;
+        String str1="";
+        String str2="";
+        System.out.println("Enter the plaintext to Encoded");
+        str=sc.nextLine();
+        str=str.toLowerCase();
+        n=str.length();
+        char ch1[]=str.toCharArray();
+        char ch3,ch4;
+        System.out.println("Enter the key (a number between 1 to 25):");
+        shift=sc.nextInt();
+
+        System.out.println();
+        System.out.println("Encrypted text is");
+        for(i=0;i<n;i++)
+        {
+            if(Character.isLetter(ch1[i]))
+            {
+                ch3=(char)(((int)ch1[i]+shift-97)%26+97);
+                //System.out.println(ch1[i]+" = "+ch3);
+                str1=str1+ch3;
             }
-            encodedMessage += c;
+            else if(ch1[i]==' ')
+            {
+                str1=str1+ch1[i];
+            }
         }
-        return encodedMessage;
+        System.out.println(str1);
+
+        System.out.println();
+        System.out.println("Decrypted text is");
+
+        char ch2[]=str1.toCharArray();
+        for(i=0;i<str1.length();i++)
+        {
+            if(Character.isLetter(ch2[i]))
+            {
+                if(((int)ch2[i]-shift)<97)
+                {
+                    ch4=(char)(((int)ch2[i]-shift-97+26)%26+97);
+
+                }
+                else
+                {
+                    ch4=(char)(((int)ch2[i]-shift-97)%26+97);
+                }
+                str2=str2+ch4;
+            }
+
+            else if(ch2[i]==' ')
+            {
+                str2=str2+ch2[i];
+            }
+        }
+        System.out.println(str2);
     }
 
-    public static String decode(String message, int key) {
-        return encode(message, 26 - key);
-    }
 }
