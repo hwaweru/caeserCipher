@@ -10,13 +10,13 @@ public class Cipher {
         Scanner sc=new Scanner(System.in);
         int shift,i,n;
         String str;
-        String str1="";
-        String str2="";
+        StringBuilder str1= new StringBuilder();
+        StringBuilder str2= new StringBuilder();
         System.out.println("Enter the plaintext to Encoded");
         str=sc.nextLine();
         str=str.toLowerCase();
         n=str.length();
-        char ch1[]=str.toCharArray();
+        char[] ch1 =str.toCharArray();
         char ch3,ch4;
         System.out.println("Enter the key (a number between 1 to 25):");
         shift=sc.nextInt();
@@ -29,11 +29,11 @@ public class Cipher {
             {
                 ch3=(char)(((int)ch1[i]+shift-97)%26+97);
                 //System.out.println(ch1[i]+" = "+ch3);
-                str1=str1+ch3;
+                str1.append(ch3);
             }
             else if(ch1[i]==' ')
             {
-                str1=str1+ch1[i];
+                str1.append(ch1[i]);
             }
         }
         System.out.println(str1);
@@ -41,7 +41,7 @@ public class Cipher {
         System.out.println();
         System.out.println("Decrypted text is");
 
-        char ch2[]=str1.toCharArray();
+        char[] ch2 = str1.toString().toCharArray();
         for(i=0;i<str1.length();i++)
         {
             if(Character.isLetter(ch2[i]))
@@ -55,12 +55,12 @@ public class Cipher {
                 {
                     ch4=(char)(((int)ch2[i]-shift-97)%26+97);
                 }
-                str2=str2+ch4;
+                str2.append(ch4);
             }
 
             else if(ch2[i]==' ')
             {
-                str2=str2+ch2[i];
+                str2.append(ch2[i]);
             }
         }
         System.out.println(str2);
