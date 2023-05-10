@@ -17,13 +17,12 @@ The encryption step performed by a Caesar cipher is often incorporated as part o
 
 
 ## BDD
--Run the file on Terminal
--Enter text to be encrypted as per your need
--Enter the encryption key
-
--Encrypted and Decrypted data displayed
--Request closes
--Run file on Terminal again to initiate 
+1. Run the file on Terminal
+2. Enter text to be encrypted as per your need
+3. Enter the encryption key
+4. Encrypted and Decrypted data displayed
+5. Request closes
+6. Run file on Terminal again to initiate 
 
 
 ## Known Bugs
@@ -32,9 +31,9 @@ There are no known bugs on this project.
 
 ## Technologies Used
 
--JAVA
--IntelliJ IDEA
--Gradle
+1. JAVA
+2. IntelliJ IDEA
+3. Gradle
 
 ## Support and contact details
 
